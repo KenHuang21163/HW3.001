@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #d4f5d4;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+/* 讓容器使用 Flexbox 排版，並將內容對齊到左側 */
+.login-container {
+    display: flex;
+    justify-content: flex-start; /* 靠左對齊 */
+    align-items: flex-start; /* 靠上對齊 */
+    height: 100vh; /* 讓容器高度填滿視窗 */
+    margin: 0;
+    padding: 1rem; /* 可以調整內邊距，避免靠得太近 */
+}
+
+/* 登入盒子不置中，限制寬度 */
+.login-box {
+    background: #d4f5d4;
+    padding: 1.5rem;
+    max-width: 360px;
+    width: 100%; /* 讓登入盒子可以自適應寬度 */
+}
+
+/* 標題 */
+.login-box h1,
+.login-box h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+/* 縮小欄位寬度 */
+.form-control,
+.btn {
+    max-width: 100%;
+}
+
+/* 主按鈕樣式 */
+.btn-primary {
+    background-color: #0070d1;
+    border-color: #0070d1;
+}
+
+.btn-primary:hover {
+    background-color: #005fa3;
+}
